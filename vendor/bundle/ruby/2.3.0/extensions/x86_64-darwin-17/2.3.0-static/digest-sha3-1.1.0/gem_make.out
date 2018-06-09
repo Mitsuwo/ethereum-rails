@@ -1,0 +1,33 @@
+current directory: /Users/Mitsumasa/ethereum-rails/vendor/bundle/ruby/2.3.0/gems/digest-sha3-1.1.0/ext/digest
+/Users/Mitsumasa/.anyenv/envs/rbenv/versions/2.3.1/bin/ruby -r ./siteconf20180609-18582-lh1526.rb extconf.rb
+checking for ruby/digest.h... yes
+checking for rb_str_set_len()... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/Mitsumasa/ethereum-rails/vendor/bundle/ruby/2.3.0/extensions/x86_64-darwin-17/2.3.0-static/digest-sha3-1.1.0/mkmf.log
+
+current directory: /Users/Mitsumasa/ethereum-rails/vendor/bundle/ruby/2.3.0/gems/digest-sha3-1.1.0/ext/digest
+make "DESTDIR=" clean
+
+current directory: /Users/Mitsumasa/ethereum-rails/vendor/bundle/ruby/2.3.0/gems/digest-sha3-1.1.0/ext/digest
+make "DESTDIR="
+compiling KeccakNISTInterface.c
+compiling displayIntermediateValues.c
+displayIntermediateValues.c:113:40: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+        fprintf(intermediateValueFile, text);
+                                       ^~~~
+displayIntermediateValues.c:113:40: note: treat the string as an argument to avoid this
+        fprintf(intermediateValueFile, text);
+                                       ^
+                                       "%s", 
+1 warning generated.
+compiling KeccakF-1600-reference.c
+compiling sha3.c
+compiling KeccakSponge.c
+linking shared-object digest/sha3.bundle
+
+current directory: /Users/Mitsumasa/ethereum-rails/vendor/bundle/ruby/2.3.0/gems/digest-sha3-1.1.0/ext/digest
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 sha3.bundle ./.gem.20180609-18582-jun6fi/digest

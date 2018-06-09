@@ -18,6 +18,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'ethereum.rb', '~> 2.2'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'dotenv-rails', '~> 2.4'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
